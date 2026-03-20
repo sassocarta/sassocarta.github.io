@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(233, 150, 91);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.pagina{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.titolo{
+    color:rgb(233, 150, 91);
+    font-size: 18px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+.contenitore-tabella{
+    display: flex;
+    justify-content:center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    
+    border: 1px solid rgb(31, 16, 0);
+}
+thead th {
+    padding: 10px;
+    text-align: left;
+    color:rgb(206, 96, 17);
+}
+.Orario {
+    padding: 10px;
+    text-align: left;
+    color:rgb(206, 96, 17);
+}
+td{
+    padding: 10px;
+    text-align: left;
+}
+caption{
+    color: rgb(206, 96, 17);
+    font-weight: bold;
+    font-size:20px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:brown;
+}
+
+a:hover{
+    color:rgb(189, 0, 0);
+}
