@@ -1,25 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Mio Sito Web</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
-    nav a { display: block; margin: 10px 0; font-size: 1.1em; }
-  </style>
+  <title>Portfolio Lorenzo Manno</title>
 </head>
+
 <body>
-  <h1>-BENVENUTO-</h1>
-  <nav>
-    <a href="pagine/MondoAnimali/MondoAnimali.html">Vai alla Pagina MondoAnimali</a>
-    <a href="pagine/Mantova/Mantova.html">Vai alla Pagina Mantova</a>
-    <a href="pagine/Orario Scolastico/Orario Scolastico.html">Vai alla Pagina Orario scolastico</a>
-    <a href="pagine/TavolaPitagorica/TavolaPitagorica.html">Vai alla Pagina Tavola pitagorica</a>
-  </nav>
+  <h1 class="manno">MANNO LORENZO</h1>
+  <header class="hero">
+    <nav id="nav-principale">
+      <ul>
+        <li><a href="#about" class="nav-link">Chi sono</a></li>
+        <li><a href="#competenze" class="nav-link">Competenze</a></li>
+        <li><a href="#progetti" class="nav-link">Progetti</a></li>
+        <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+      </ul>
+    </nav>
+
+    <p class="hero-intro">
+      Sviluppatore web in formazione. Sto imparando HTML, CSS e JavaScript
+      costruendo questo portfolio passo dopo passo.
+    </p>
+    <a href="#progetti" class="btn">Guarda i miei progetti</a>
+  </header>
+
+  <section id="competenze" class="sezione">
+    <h2>Competenze</h2>
+    <ul class="lista-competenze">
+      <li><strong>HTML</strong> — struttura semantica e accessibilità</li>
+      <li><strong>CSS</strong> — cascade, box model, selettori</li>
+      <li><strong>JavaScript</strong> — basi in corso di apprendimento</li>
+      <li><strong>Git</strong> — versionamento e GitHub</li>
+      <li><strong>VS Code</strong> — editor e estensioni</li>
+    </ul>
+  </section>
+
+  <section id="progetti" class="sezione">
+    <h2>Progetti</h2>
+    
+    <div class="card">
+      <h3>Homepage del portfolio</h3>
+      <p>Struttura HTML semantica e stili CSS di base.</p>
+      <a href="#" class="btn-small">Vedi dettagli</a>
+    </div>
+
+    <div class="card">
+      <h3>Mantova</h3>
+      <p>Descrizione breve del secondo progetto.</p>
+      <a href="pagine/Mantova/Mantova.html" class="btn-small">Vedi dettagli</a>
+    </div>
+
+     <div class="card">
+      <h3>Mondo Animali</h3>
+      <p>Descrizione breve del secondo progetto.</p>
+      <a href="pagine/MondoAnimali/MondoAnimali.html" class="btn-small">Vedi dettagli</a>
+    </div>
+
+     <div class="card">
+      <h3>Orario Scolastico</h3>
+      <p>Descrizione breve del secondo progetto.</p>
+      <a href="pagine/Orario Scolastico/Orario Scolastico.html" class="btn-small">Vedi dettagli</a>
+    </div>
+
+     <div class="card">
+      <h3>Tavola pitagorica</h3>
+      <p>Descrizione breve del secondo progetto.</p>
+      <a href="pagine/TavolaPitagorica/TavolaPitagorica.html" class="btn-small">Vedi dettagli</a>
+    </div>
+
+  </section>
+
+  <footer class="footer-principale">
+    <p>&copy; 2025 Nome Cognome — Portfolio in costruzione</p>
+    <ul>
+      <li><a href="https://github.com/tuonome" class="footer-link">GitHub</a></li>
+      <li><a href="#" class="footer-link">LinkedIn</a></li>
+    </ul>
+  </footer>
+
 </body>
+
 </html>
-
-
-
