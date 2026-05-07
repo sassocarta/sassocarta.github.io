@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caccia al Tesoro — Portfolio Lorenzo Manno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>Cerca il Tesoro</h1>
+    <p class="sottotitolo">Mini-gioco a indizi: leggi, indovina la parola chiave, raccogli i punti.</p>
+  </header>
+
+  <main class="contenuto">
+    <section id="schermata-avvio" class="pannello">
+      <h2>Pronto a partire?</h2>
+      <p>Inserisci il tuo nome e inizia l'avventura.</p>
+      <label for="input-nome" class="etichetta">Nome esploratore</label>
+      <input type="text" id="input-nome" class="campo-testo" placeholder="es. Marco">
+      <button type="button" id="btn-inizia" class="btn">Avvia partita</button>
+    </section>
+
+    <section id="schermata-gioco" class="pannello nascosto">
+      <div class="status-bar">
+        <span><strong>Giocatore:</strong> <span id="lbl-nome">—</span></span>
+        <span><strong>Punteggio:</strong> <span id="lbl-punti">0</span></span>
+        <span><strong>Vite:</strong> <span id="lbl-vite">3</span></span>
+      </div>
+
+      <div class="indizio">
+        <h3>Indizio attuale</h3>
+        <p id="testo-indizio">…</p>
+      </div>
+
+      <div class="riga">
+        <label for="input-risposta" class="etichetta">Parola chiave</label>
+        <input type="text" id="input-risposta" class="campo-testo" placeholder="Scrivi qui">
+      </div>
+      <div class="gruppo-bottoni">
+        <button type="button" id="btn-rispondi" class="btn">Conferma risposta</button>
+      </div>
+
+      <div id="messaggio" class="messaggio" role="status" aria-live="polite"></div>
+
+      <details class="log-box">
+        <summary>Storico mosse</summary>
+        <ol id="lista-log" class="lista-log"></ol>
+      </details>
+    </section>
+
+    <section id="schermata-fine" class="pannello nascosto">
+      <h2 id="titolo-fine">Partita conclusa</h2>
+      <p id="messaggio-fine"></p>
+      <p>Punteggio finale: <strong id="punti-finali">0</strong></p>
+      <button type="button" id="btn-ricomincia" class="btn">Gioca di nuovo</button>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Lorenzo Manno</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
