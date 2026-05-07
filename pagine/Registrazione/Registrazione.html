@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrazione — Portfolio Lorenzo Manno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>Mini-form registrazione</h1>
+    <p class="sottotitolo">Form semplice con campi testo, radio e checkbox — listener su <code>change</code>.</p>
+  </header>
+
+  <main class="contenuto">
+    <form id="form-registrazione" class="box-form" novalidate>
+      <div class="riga">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Mario">
+      </div>
+      <div class="riga">
+        <label for="cognome">Cognome</label>
+        <input type="text" id="cognome" placeholder="Rossi">
+      </div>
+
+      <fieldset class="riga">
+        <legend>Sesso</legend>
+        <label class="radio"><input type="radio" name="sesso" value="Maschio"> Maschio</label>
+        <label class="radio"><input type="radio" name="sesso" value="Femmina"> Femmina</label>
+      </fieldset>
+
+      <fieldset class="riga">
+        <legend>Hobby</legend>
+        <label class="check"><input type="checkbox" class="hobby" value="calcio"> Calcio</label>
+        <label class="check"><input type="checkbox" class="hobby" value="nuoto"> Nuoto</label>
+        <label class="check"><input type="checkbox" class="hobby" value="basket"> Basket</label>
+      </fieldset>
+
+      <div class="riepilogo" id="riepilogo">
+        <p class="placeholder">Modifica i campi per vedere il riepilogo aggiornato in tempo reale.</p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Lorenzo Manno</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
