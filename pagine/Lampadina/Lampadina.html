@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lampadina — Portfolio Lorenzo Manno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>Lampadina interattiva</h1>
+    <p class="sottotitolo">Piccolo esperimento per cambiare contenuto e immagini con JavaScript.</p>
+  </header>
+
+  <main class="contenuto">
+    <section class="blocco">
+      <h2>Modifica del testo</h2>
+      <p id="messaggio">Questo paragrafo verrà cambiato dal codice JavaScript.</p>
+      <button type="button" id="btn-cambia-testo" class="btn">Cambia il testo</button>
+    </section>
+
+    <section class="blocco">
+      <h2>Cambio immagine</h2>
+      <p>I due bottoni qui sotto modificano l'attributo <code>src</code> dell'immagine.</p>
+      <figure class="figura-lampadina">
+        <img id="lampadina" src="images/lampadina-off.jpg" alt="Lampadina spenta" width="120">
+      </figure>
+      <div class="gruppo-bottoni">
+        <button type="button" id="btn-accendi" class="btn">Accendi</button>
+        <button type="button" id="btn-spegni" class="btn-secondario">Spegni</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Lorenzo Manno</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
