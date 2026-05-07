@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --blu-notte:   #0f1623;
+  --blu-medio:   #1a2744;
+  --accento:     #3d7fff;
+  --accento-soft:#a8c4ff;
+  --testo:       #1e1e2e;
+  --testo-soft:  #5a5a72;
+  --sfondo:      #f9f8f6;
+  --carta:       #ffffff;
+  --bordo:       #e4e4ee;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--testo);
+  background-color: var(--sfondo);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1, h2, h3 { font-family: 'Syne', sans-serif; letter-spacing: -0.02em; }
+h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 0.4rem; }
+
+p { margin-bottom: 1rem; }
+code { background: #eef0f5; padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.9rem; }
+
+.page-header {
+  background: linear-gradient(150deg, var(--blu-notte) 0%, #152038 100%);
+  color: #fff;
+  padding: 2.5rem 1.5rem 2rem;
+  margin: 0 -1.5rem 2.5rem;
+  border-bottom: 3px solid var(--accento);
+}
+.page-header .sottotitolo { color: #9eb8e0; font-weight: 300; }
+
+.back-link {
+  display: inline-block;
+  color: var(--accento-soft);
+  text-decoration: none;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+.back-link:hover { color: #fff; }
+
+.page-footer {
+  border-top: 1px solid var(--bordo);
+  margin-top: 4rem;
+  padding: 2rem 0 2.5rem;
+  color: #8888a0;
+  font-size: 0.88rem;
+}
+
+/* Componenti specifici */
+.pannello {
+  background: var(--carta);
+  border: 1px solid var(--bordo);
+  border-left: 3px solid var(--accento);
+  border-radius: 10px;
+  padding: 1.75rem;
+}
+
+.etichetta {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--blu-notte);
+  margin-bottom: 0.4rem;
+}
+
+.campo-select, .campo-testo {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--bordo);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #fff;
+  margin-bottom: 1.25rem;
+}
+.campo-select:focus, .campo-testo:focus {
+  outline: 2px solid var(--accento);
+  outline-offset: 1px;
+  border-color: var(--accento);
+}
+
+.gruppo-bottoni { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+
+.btn, .btn-secondario {
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s, transform 0.12s;
+}
+.btn { background-color: var(--accento); color: #fff; }
+.btn:hover { background-color: #1a5fd4; }
+.btn-secondario { background: transparent; color: var(--accento); border: 1.5px solid var(--accento); }
+.btn-secondario:hover { background: var(--accento); color: #fff; }
+
+.output { margin-top: 1rem; }

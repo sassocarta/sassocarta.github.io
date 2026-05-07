@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Anni — Portfolio Lorenzo Manno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>Menu a tendina e anni</h1>
+    <p class="sottotitolo">Esperimento con la <code>select</code>: lettura dell'opzione e popolamento dinamico.</p>
+  </header>
+
+  <main class="contenuto">
+    <section class="pannello">
+      <label for="menu-opzioni" class="etichetta">Scegli un'opzione:</label>
+      <select id="menu-opzioni" class="campo-select">
+        <option value="1">Opzione 1</option>
+        <option value="2">Opzione 2</option>
+        <option value="3">Opzione 3</option>
+      </select>
+
+      <div class="gruppo-bottoni">
+        <button type="button" id="btn-stampa" class="btn">Mostra selezionato</button>
+        <button type="button" id="btn-popola-anni" class="btn-secondario">Riempi con anni</button>
+      </div>
+
+      <div class="output">
+        <label for="campo-output" class="etichetta">Output:</label>
+        <input type="text" id="campo-output" class="campo-testo" readonly>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Lorenzo Manno</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
