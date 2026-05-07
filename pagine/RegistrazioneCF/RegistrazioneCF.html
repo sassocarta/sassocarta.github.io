@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrazione utente — Portfolio Lorenzo Manno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>Registrazione utente</h1>
+    <p class="sottotitolo">Form di iscrizione con anno popolato automaticamente (utente maggiorenne).</p>
+  </header>
+
+  <main class="contenuto">
+    <form id="form-cf" class="box-form" novalidate>
+      <div class="riga">
+        <label for="cognome">Cognome</label>
+        <input type="text" id="cognome" autocomplete="family-name">
+      </div>
+      <div class="riga">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" autocomplete="given-name">
+      </div>
+      <div class="riga">
+        <label for="cf">Codice Fiscale</label>
+        <input type="text" id="cf" maxlength="16" placeholder="RSSMRA80A01H501U">
+      </div>
+
+      <fieldset class="riga">
+        <legend>Sesso</legend>
+        <label class="radio"><input type="radio" name="sesso" value="M" checked> M</label>
+        <label class="radio"><input type="radio" name="sesso" value="F"> F</label>
+      </fieldset>
+
+      <div class="riga">
+        <label for="anno">Anno di nascita</label>
+        <select id="anno"></select>
+      </div>
+
+      <div class="riga">
+        <label class="check">
+          <input type="checkbox" id="termini">
+          Accetto i termini del servizio
+        </label>
+      </div>
+
+      <button type="button" id="btn-registra" class="btn">Registrati</button>
+      <div id="esito" class="esito" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Lorenzo Manno</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
