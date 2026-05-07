@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordine — Portfolio Lorenzo Manno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>Modulo ordine</h1>
+    <p class="sottotitolo">Mini-carrello con tabella articoli, totali e validazione email.</p>
+  </header>
+
+  <main class="contenuto">
+    <section class="box-form">
+      <h2 class="titolo-blocco">Articoli disponibili</h2>
+      <div id="tabella-ordine"></div>
+
+      <button type="button" id="btn-azzera" class="btn-secondario">Azzera modulo</button>
+
+      <h2 class="titolo-blocco">Dati di fatturazione</h2>
+
+      <fieldset class="riga">
+        <legend>Notifiche</legend>
+        <label class="radio"><input type="radio" name="notifiche" value="si" checked> Sì</label>
+        <label class="radio"><input type="radio" name="notifiche" value="no"> No</label>
+      </fieldset>
+
+      <div class="riga">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="esempio@dominio.it">
+      </div>
+
+      <div class="riga">
+        <label for="metodo-pagamento">Metodo di pagamento</label>
+        <select id="metodo-pagamento">
+          <option value="contanti">Contanti</option>
+          <option value="carta di credito">Carta di credito</option>
+          <option value="bonifico">Bonifico</option>
+        </select>
+      </div>
+
+      <button type="button" id="btn-invia" class="btn">Invia ordine</button>
+      <div id="riepilogo-finale" class="riepilogo-finale" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Lorenzo Manno</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
